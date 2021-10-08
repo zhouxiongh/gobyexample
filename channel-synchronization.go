@@ -13,9 +13,9 @@ func worker(done chan bool) {
 	done <- true
 }
 
-//func main() {
-//	done := make(chan bool, 1)
-//	go worker(done)
-//
-//	<-done
-//}
+func main() {
+	done := make(chan bool, 1)
+	go worker(done)
+
+	<-done
+}
