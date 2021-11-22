@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func intSeq() func() int {
 	i := 0
 	return func() int {
@@ -8,14 +10,14 @@ func intSeq() func() int {
 	}
 }
 
-//func main() {
-//	fmt.Println("hello world")
-//	nextInt := intSeq()
-//
-//	fmt.Println(nextInt())
-//	fmt.Println(nextInt())
-//	fmt.Println(nextInt())
-//
-//	newInts := intSeq()
-//	fmt.Println(newInts())
-//}
+func main() {
+	fmt.Println("hello world")
+	nextInt := intSeq()
+
+	fmt.Println(nextInt())
+	fmt.Println(nextInt())
+	fmt.Println(nextInt())
+
+	newInts := intSeq()
+	fmt.Println(newInts())
+}
