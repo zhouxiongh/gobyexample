@@ -11,11 +11,11 @@ func sum(nums ...int) {
 	fmt.Println(total)
 }
 
-//func main() {
-//	sum(1, 2)
-//	sum(1, 2, 3)
-//
-//	nums := []int{1, 2, 3, 4}
-//	sum(nums...)
-//
-//}
+func main() {
+	sum(1, 2)
+	sum(1, 2, 3)
+
+	nums := []int{1, 2, 3, 4}
+	sum(nums...)
+
+}
